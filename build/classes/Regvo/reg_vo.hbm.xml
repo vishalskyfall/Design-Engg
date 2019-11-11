@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class table="register1" name="Regvo.stud_loginvo">
+
+	<id name="id" column="id" type="int">
+		<generator class="increment"/>
+	</id>
+
+
+	 <property name="fn">
+		<column name="firstname"/>
+	</property>
+
+
+	<property name="ln">
+		<column name="lastname"/>
+	</property> 
+	
+	<property name="un">
+		<column name="username"/>
+	</property>
+	
+	<property name="pswd">
+		<column name="password" />
+	</property>
+
+</class>
+
+</hibernate-mapping>

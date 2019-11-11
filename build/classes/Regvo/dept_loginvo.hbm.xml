@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class table="dept_data" name="Regvo.Registervo">
+
+	<id name="id" column="id" type="int">
+		<generator class="increment"/>
+	</id> 
+
+
+	 <!-- <property name="fn">
+		<column name="firstname"/>
+	</property>-->
+
+
+	<property name="dept_un">
+		<column name="username"/>
+	</property>  
+	
+	
+	
+	<property name="dept_ps">
+		<column name="password" />
+	</property>
+
+<!-- 
+	<property name="un_hod">
+		<column name="HOD-username"/>
+	</property>  
+	
+	<property name="em_hod">
+		<column name="HOD-email"/>
+	</property>
+	
+	<property name="ps_hod">
+		<column name="HOD-password" />
+	</property> -->
+
+</class>
+
+</hibernate-mapping>
